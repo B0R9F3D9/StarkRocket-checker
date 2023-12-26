@@ -47,4 +47,4 @@ if __name__ == '__main__':
     # Запись результатов в файл
     df = pd.DataFrame(result)
     df.to_excel('result.xlsx', index=False)
-    print('Результаты записаны в файл result.xlsx')
+    print('The results are saved in the file result.xlsx')
