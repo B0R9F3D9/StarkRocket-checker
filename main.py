@@ -2,7 +2,7 @@ from requests import get
 from tabulate import tabulate
 from concurrent.futures import ThreadPoolExecutor
 import pandas as pd
-from config import THREADS
+from config import THREADS, ALL_ADDRESS
 
 
 def main(address: str) -> str:
@@ -12,7 +12,7 @@ def main(address: str) -> str:
         r = get(url, params)
         data = r.json()['result']
         return {
-            'address': address,
+            'address': address[:5] + '...' + address[-5:] if not ALL_ADDRESS else address,
             'bridge_volume': max(data['criteria']['bridge_volume']) if data['criteria']['bridge_volume'] else 0,
             'contracts': max(data['criteria']['contracts_variety']) if data['criteria']['contracts_variety'] else 0,
             'transaction_volume': max(data['criteria']['transaction_volume']) if data['criteria']['transaction_volume'] else 0,
@@ -22,7 +22,7 @@ def main(address: str) -> str:
             'points': data['points']}
     except:
         return {
-            'address': address,
+            'address': address[:5] + '...' + address[-5:] if not ALL_ADDRESS else address,
             'bridge_volume': 'ERROR',
             'contracts': 'ERROR',
             'transaction_volume': 'ERROR',
