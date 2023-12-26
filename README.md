@@ -1,7 +1,7 @@
 # StarkRocket-checker
 StarkRocker airdrop checker with the function of print a table with results and saving them to an xlsx sheet
-![photo_2023-12-26_12-54-32](https://github.com/B0R9F3D9/StarkRocket-checker/assets/131712860/cc79406f-356d-48df-aa0e-7a18c405bb33)
-![photo_2023-12-26_12-54-36](https://github.com/B0R9F3D9/StarkRocket-checker/assets/131712860/a44c3e48-8555-4819-89f4-e16bb137c185)
+![image](https://github.com/B0R9F3D9/StarkRocket-checker/assets/131712860/63aec4cc-5ac3-437e-a118-02bafb21c0cb)
+![image](https://github.com/B0R9F3D9/StarkRocket-checker/assets/131712860/0e4ccbd0-5172-48ba-a700-3e358df233b0)
 # Install
 - pip install -r req.txt
 # Config
