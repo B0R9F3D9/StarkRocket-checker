@@ -1,5 +1,5 @@
 # StarkRocket-checker
-StarkRocker airdrop checker
+StarkRocker airdrop checker with the function of print a table with results and saving them to an xlsx table
 # Install
 - pip install -r req.txt
 # Config
